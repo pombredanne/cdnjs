@@ -4,7 +4,7 @@ var assert = require("assert"),
     path = require("path"),
     fs = require("fs"),
     glob = require("glob"),
-    vows = require("vows"),
+    vows = require("vows-si"),
     jsv = require("JSV").JSV.createEnvironment();
 
 function parse(json_file, ignore_missing, ignore_parse_fail) {
@@ -99,6 +99,13 @@ packages.map(function (pkg) {
             + "/" + json.filename;
         assert.ok(fs.existsSync(filePath),
                   filePath +" does not exist but is referenced in package.json!");
+    };
+    package_vows[pname + ": name in package.json should be parent folder name"] = function (pkg) {
+        var json = parse(pkg, true, true);
+        var dirs = pkg.split("/");
+        var trueName = dirs[dirs.length - 2];
+        assert.ok(trueName == json.name,
+            pkg_name(pkg) + ": Name property should be '" + trueName + "', not '" + json.name +"'");
     };
 
     context[pname] = package_vows;

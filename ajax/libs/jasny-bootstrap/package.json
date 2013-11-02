@@ -1,0 +1,30 @@
+{
+    "name": "jasny-bootstrap"
+  , "description": "An extended version of Twitter Bootstrap"
+  , "version": "3.0.1-p7"
+  , "filename": "js/bootstrap.min.js"
+  , "keywords": ["twitter bootstrap", "bootstrap", "css"]
+  , "homepage": "http://jasny.github.com/bootstrap/"
+  , "author": "Jasny BV"
+  , "maintainers": [
+    {
+      "name": "Arnold Daniels",
+      "email": "arnold@jasny.net",
+      "web": "https://twitter.com/ArnoldDaniels/"
+    }
+  ]
+  , "repository": {
+      "type": "git"
+    , "url": "https://github.com/jasny/bootstrap.git"
+  }
+  , "bugs": "https://github.com/jasny/bootstrap/issues"
+  , "licenses": [
+    {
+        "type": "Apache-2.0"
+      , "url": "http://www.apache.org/licenses/LICENSE-2.0"
+    }
+  ]
+  , "bundledDependencies": [
+      "bootstrap"
+  ]
+}
