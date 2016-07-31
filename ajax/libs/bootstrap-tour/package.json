@@ -1,9 +1,16 @@
 {
   "name": "bootstrap-tour",
   "filename": "js/bootstrap-tour.min.js",
-  "description": "Quick and easy way to build your product tours with Twitter Bootstrap Popovers.",
-  "version": "0.7.3",
-  "keywords": ["tour", "bootstrap", "js", "tour", "intro", "twitter"],
+  "description": "Quick and easy way to build your product tours with Bootstrap Popovers.",
+  "version": "0.10.3",
+  "keywords": [
+    "tour",
+    "bootstrap",
+    "js",
+    "tour",
+    "intro",
+    "twitter"
+  ],
   "homepage": "http://bootstraptour.com",
   "mantainers": [
     {
@@ -17,14 +24,23 @@
       "web": "http://lostcrew.nl"
     }
   ],
-  "contributors": [
-    {
-      "name": "Nicola Molinari",
-      "email": "emmenko@gmail.com"
-    }
-  ],
   "repository": {
     "type": "git",
     "url": "https://github.com/sorich87/bootstrap-tour.git"
+  },
+  "npmName": "bootstrap-tour",
+  "npmFileMap": [
+    {
+      "basePath": "/build/",
+      "files": [
+        "*"
+      ]
+    }
+  ],
+  "license": "Apache-2.0",
+  "author": {
+    "name": "Ulrich Sossou",
+    "email": "sorich87@gmail.com",
+    "url": "http://ulrichsossou.com"
   }
 }

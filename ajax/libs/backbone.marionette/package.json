@@ -1,25 +1,32 @@
 {
   "name": "backbone.marionette",
   "filename": "backbone.marionette.min.js",
-  "version": "1.4.1-bundled",
-  "description": "Make your Backbone.js apps dance with a composite application architecture!",
-  "homepage": "http://github.com/marionettejs/backbone.marionette",
+  "version": "2.5.6",
+  "description": "Make your Backbone.js apps dance!",
+  "homepage": "https://github.com/marionettejs/backbone.marionette",
   "keywords": [
-      "collections",
-      "models",
-      "controllers",
-      "events",
-      "popular"
+    "collections",
+    "models",
+    "controllers",
+    "events",
+    "popular"
   ],
-  "maintainers": [{
-      "name": "Derick Bailey",
-      "email": "derickbailey@gmail.com",
-      "web": "http://derickbailey.lostechies.com/"
-    }
-  ],
-  "repositories": [{
-      "type": "git",
-      "url": "http://github.com/marionettejs/backbone.marionette"
-    }
-  ]
+  "autoupdate": {
+    "source": "git",
+    "target": "git://github.com/marionettejs/backbone.marionette.git",
+    "basePath": "/lib/",
+    "files": [
+      "**/*"
+    ]
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/marionettejs/backbone.marionette"
+  },
+  "license": "MIT",
+  "author": {
+    "name": "Derick Bailey",
+    "email": "derickbailey@gmail.com",
+    "url": "http://derickbailey.lostechies.com"
+  }
 }

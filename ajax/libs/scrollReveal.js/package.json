@@ -1,0 +1,29 @@
+{
+  "name": "scrollReveal.js",
+  "filename": "scrollreveal.min.js",
+  "version": "3.3.1",
+  "description": "Easily reveal elements as they enter the viewport.",
+  "author": "Julian Lloyd",
+  "homepage": "https://github.com/jlmakes/scrollReveal.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/jlmakes/scrollReveal.js.git"
+  },
+  "autoupdate": {
+    "source": "git",
+    "target": "git://github.com/jlmakes/scrollReveal.js.git",
+    "basePath": "dist",
+    "files": [
+      "**/*"
+    ]
+  },
+  "license": "MIT",
+  "keywords": [
+    "scroll",
+    "reveal",
+    "css",
+    "animation",
+    "javascript",
+    "mobile"
+  ]
+}

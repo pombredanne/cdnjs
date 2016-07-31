@@ -1,0 +1,36 @@
+{
+  "name": "is_js",
+  "version": "0.8.0",
+  "filename": "is.min.js",
+  "license": "MIT",
+  "description": "micro check library",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/arasatasaygin/is.js.git"
+  },
+  "homepage": "https://github.com/arasatasaygin/is.js",
+  "npmName": "is_js",
+  "npmFileMap": [
+    {
+      "basePath": "",
+      "files": [
+        "is*"
+      ]
+    }
+  ],
+  "authors": [
+    "arasatasaygin <arasatasaygin@gmail.com>"
+  ],
+  "keywords": [
+    "type",
+    "presence",
+    "regexp",
+    "string",
+    "arithmetic",
+    "object",
+    "array",
+    "environment",
+    "time",
+    "configuration"
+  ]
+}

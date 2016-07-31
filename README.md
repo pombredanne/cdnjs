@@ -1,76 +1,133 @@
-<a href="http://travis-ci.org/cdnjs/cdnjs"><img src="https://secure.travis-ci.org/cdnjs/cdnjs.png" alt="Build Status" style="max-width:100%;"></a>
+# cdnjs Library Repository
 
-# cdnJS Script Repository
+﻿[![Circle CI](https://img.shields.io/circleci/project/cdnjs/cdnjs/master.svg)](https://circleci.com/gh/cdnjs/cdnjs)
+﻿[![Dependency Status](https://david-dm.org/cdnjs/cdnjs.svg?theme=shields.io)](https://david-dm.org/cdnjs/cdnjs) [![devDependency Status](https://david-dm.org/cdnjs/cdnjs/dev-status.svg?theme=shields.io)](https://david-dm.org/cdnjs/cdnjs#info=devDependencies)
+﻿[![license](https://img.shields.io/badge/license-MIT-brightgreen.svg?style=flat)](https://github.com/cdnjs/cdnjs/blob/master/MIT-LICENSE)
+﻿[![Gitter chat](https://badges.gitter.im/cdnjs/cdnjs.svg)](https://gitter.im/cdnjs/cdnjs)
+﻿[![Issue Stats](http://www.issuestats.com/github/cdnjs/cdnjs/badge/pr?style=flat)](http://www.issuestats.com/github/cdnjs/cdnjs) [![Issue Stats](http://www.issuestats.com/github/cdnjs/cdnjs/badge/issue?style=flat)](http://www.issuestats.com/github/cdnjs/cdnjs)
+﻿[![tip for next commit](https://tip4commit.com/projects/919.svg)](https://tip4commit.com/github/cdnjs/cdnjs) [![Bountysource](https://www.bountysource.com/badge/team?team_id=11914&style=bounties_posted)](https://www.bountysource.com/teams/cdnjs/bounties?utm_source=cdnjs&utm_medium=shield&utm_campaign=bounties_posted)
+[![GetBadges Game](https://cdnjs-cdnjs.getbadges.io/shield/company/cdnjs-cdnjs)](https://cdnjs-cdnjs.getbadges.io/?ref=shield-game)
 
-The repository mirroring all scripts on cdnjs.cloudflare.com, created and maintained by [Thomas Davis](https://twitter.com/neutralthoughts), [Ryan Kirkman](https://twitter.com/ryan_kirkman) and [Lachlan Collins](http://plus.google.com/116251728973496544370?prsrc=3)
+[cdnjs](https://github.com/cdnjs/cdnjs) is the repository mirroring all library assets on [cdnjs.cloudflare.com](https://cdnjs.cloudflare.com).
 
-We will host any version of any library. Feel free to add a pull request for an older version of a library if your site still uses it.
+[Thomas Davis](https://twitter.com/neutralthoughts) and [Ryan Kirkman](https://twitter.com/ryan_kirkman) created cdnjs, [Drew Freyling](http://decompile.it/blog/) and [Peter Dave Hello](https://github.com/PeterDaveHello) are maintainers. [Juan Gallardo](http://jgallardo.me/) is our community moderator.
 
-__Libraries must have notable popularity. 100 stars on GitHub is a good example, but as long as reasonably popularity can be demonstrated the library will be added.__
-## Extensions, Plugins, Resources
+Here are the project sponsors:
 
-[Extensions, Plugins, Resources](https://github.com/cdnjs/cdnjs/wiki/Extensions%2C-Plugins%2C-Resources)
+ * [![Cloudflare](https://cdnjs.com/img/poweredbycloudflare.png)](https://cloudflare.com/?utm_source=cdnjs&utm_medium=link&utm_campaign=cdnjs)
+ * [![Algolia](https://cdnjs.com/img/algolia256x80.png)](https://www.algolia.com/?utm_source=cdnjs&utm_medium=link&utm_campaign=cdnjs)
+
+cdnjs will host any production version of any JavaScript/CSS library, subject to license permissions.
+
+  * Libraries must have notable popularity: 100 stars/watchers on GitHub, or more than 500 times download per month on npm stats are both good examples, but as long as reasonable popularity can be demonstrated the library will be added.
+  * Beta, release candidate and alpha releases are not usually considered ready for full production status. Requests for pre-release versions of libraries _may_ be declined after peer review.
+  * We'll accept beta, release candidate and alpha releases if you are using our npm/git auto-update mechanism, if you really want it, please setup auto-update for that lib.
+
+Please raise a new pull request for new library additions and existing library updates, following the instructions below.
+
+## IMPORTANT
+
+ - All new libraries hosted on CDNJS should have an official public repository or npm package, and the officially pre-built distribution file(s) should also be there, so that we can apply the auto-update mechanism on that lib.
+ - Now CDNJS supports adding a library by a single package.json, you just need to add a valid CDNJS package.json with npm/git auto-update config, and remove its version field in package.json, then we'll handle the remaining works.
+   - Notes that you should have a `filename` to point to the main file of a lib, if that file is not minified, please still use `filename.min.js` or `filename.min.css` structure naming, we'll do the minify job.
+
+## Adding a new or updating an existing library
+
+cdnjs relies on user-submitted pull requests and automatic updating via `npm` or `git` repository to populate and update libraries.
+
+To add a new library, or update an existing library outside of `npm`/`git`, start by [forking the cdnjs repo](https://github.com/cdnjs/cdnjs/fork) to your own GitHub account.
+
+If you're adding/modifying outside of the GitHub browser interface, for example on the command line or with the GitHub desktop application, you will need to additionally install `node`(`node.js`) locally, so that you can run the test  or utils under `tools` locally.
+
+When you have forked the cdnjs repo, add your library to it. Libraries are stored in the `ajax/libs` directory. Each library has its own subdirectory of `ajax/libs` and each version of the library has its own subdirectory of the library directory name, for example:
+
+```
+/ajax/libs/jquery/2.0.0/
+```
+
+[**@IonicaBizau**](https://github.com/IonicaBizau) wrote a NodeJS command line tool for automating the adding process of a new library. This tool [is named *cdnjs-importer* and it's open source](https://github.com/cdnjs/cdnjs-importer)
+
+For more information regarding this importer, please check out the [repository documentation](https://github.com/cdnjs/cdnjs-importer).
 
 ## Conventions
 
-* Filenames should **not** include version number and be **lowercase**
-* Javascript & Css files should be minified, If the library doesn't already provide a minified version, our preferred minifier is [UglifyJS](http://marijnhaverbeke.nl/uglifyjs "UglifyJS")
-* If updating an existing library, try to keep consistent with the existing structure
+You should consider the following when adding to or updating the library, so that we can keep our project neat, clean and clear:
 
-## Pull requests steps
+* Filenames should _not_ include a version number.
+  * This is OK: `useful.min.js`, but this is not: `useful-2.0.1.min.js`.
 
-1. Fork this repository
-  * Install all the needed dependencies locally (you will need `node`): `npm install`
-2. Add your library (following the conventions of this repository)
-  * 1 commit per pull request
-  * 1 library per pull request
-  * The files in the pull request must correspond to a tag in the original repository (some exceptions apply)
-  * include a package.json in the npm format (see `test/schemata/npm-package.json` for details - it's very simple)
-  * Run `npm test` to check everything is ok
-3. Send us a pull request.
-  * If you are the author of the library, add `[author]` to the pull request title
-  * Make sure you include in the pull description:
-      1. Where you downloaded the script
-      2. If it isn't clear, how you found the version of the script
-  * e.g. https://github.com/cdnjs/cdnjs/pull/541
-4. If the library doesn't already provide a minified version, our preferred minifier is [UglifyJS](http://marijnhaverbeke.nl/uglifyjs "UglifyJS")
+* JavaScript & CSS files should be minified to reduce network traffic and browser overhead.
+  * If the library doesn't already provide a minified version, cdnjs's preferred JavaScript minifier is [UglifyJS](http://marijnhaverbeke.nl/uglifyjs "UglifyJS")
 
-## Enabling NPM auto update
+* If you are updating a library, please try to maintain consistency with the existing file and directory structure.
+  * There will be occasions, particularly with major version increments, where this is not practical.
 
-We automatically update libraries that are also hosted on NPM e.g. Lodash.
+* You should sync your local repository with our master branch as new as possible, try to make the commits' parent be new.
+ * Please use `git pull --rebase` instead of `git pull`, use `git rebase upstream/master` instead of `git merge upstream/master`, so that we can avoid of meaningless merging.
 
-This script runs automatically every 4 hours
+* Only do one _meaningful_ thing in one commits, don't mix different things into the same commit, like add two libs in a commit.
 
-1. Update the package.json and configure it as below and submit a pull request.
+* Every commits should be meaningful, don't cut one thing into multiple commits, like add a lib in 3 commits.
 
-```
- // Lodash package.json
- // ...
-  "npmName": "lodash",
-  "npmFileMap": [{
-    "basePath": "/dist/",
-    "files": [
-      "*"
-    ]
-  }],
-  // ...
-```
+* Inspect your work by `git diff` & `git status` before commit your change.
 
-`npmName` should map to the name of the library on NPM
-`npmFileMap` is a white list of files to take from the NPM tarball and host on the cdn
-`basePath` will be ignored when copying over to the cdn
-`files` is a pattern matcher that you can select many files with
+* Inspect your commit by `git log --stat` & `git log -p` before sending a pull request.
 
-The above example looks in the tarball whose structure might look like
+## Create or update `package.json`
+
+Each library has a corresponding `package.json`, written in `npm` format (see `test/schemata/npm-package.json` for details or use another `package.json` to crib from - it's pretty self-explanatory), and we use `filename` field in `package.json` to point to the mainfile of a lib, this field will be required. When an existing library is updated, the details in `package.json` should be updated where required.
+
+For example, if a new version of the library is added, the version number may need changing. Likewise, if you're adding `npm` update information to a library, this is done in `package.json`.
+
+## Run `npm test` to check all is well
+
+If you're updating the library outside of `npm` or the GitHub browser, you should run `npm test` from the library directory to ensure everything is OK.
+
+If you run `npm test` and see no errors, all is well; resolve any errors before you raise your pull request and re-run `npm test` to ensure everything works.
+
+If you see an error then run `npm install` before running `npm test`:
 
 ```
-- dist/lodash.js
-- dist/lodash.min.js
-- README
+vows: command not found
+npm ERR! Test failed.  See above for more details.
+npm ERR! not ok code 0
 ```
 
-It then will look for `dist/*` which will find the two files inside the dist folder. It will now copy it over to cdnjs but without the `dist` path. Such that they will end up. `ajax/libs/lodash.js/2.0/lodash.js`
+## Pull request pre-flight checks
 
-## Running the validator
-1. Install all the needed dependencies locally (you will need `node`): `npm install`
-2. Run the test suite: `npm test`
+* Have you complied with our conventions?
+* Have you followed the library directory structure?
+* Does a valid and accurate `package.json` exist for the library?
+* Have you minified JavaScript and CSS?
+* Did `npm test` check out OK?
+
+...if so, great! You're ready to raise a pull request.
+
+## Raising a pull request
+
+Please restrict your pull request to one library. You can include >1 version/release of a library in a single pull request.
+
+From a maintenance standpoint, it's much more straightforward to process pull requests where there is one commit for one library.
+
+In your pull request title, tell us what you're doing.
+
+ - If you are the author of the library, please add `[author]` to the pull request title.
+
+ - If you are adding a new lib, please add `[new]` to the pull request title.
+
+__Please include the following in your pull request:__
+
+* The origin of your new files
+  * e.g., where you downloaded the version from
+
+A URL is ideal. Providing the origin of your files is very helpful as the cdnjs project is peer-reviewed. Practically speaking, it also helps us process your pull request more efficiently, which means your files go live sooner. Help us and we'll help you back.
+
+## Enabling auto-update
+See [autoupdate.md](documents/autoupdate.md)
+
+## API
+See [api.md](documents/api.md)
+
+## Extensions, Plugins, Resources
+
+[Extensions, Plugins, Resources](https://github.com/cdnjs/cdnjs/wiki/Extensions%2C-Plugins%2C-Resources)

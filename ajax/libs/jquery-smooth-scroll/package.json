@@ -1,10 +1,31 @@
 {
   "name": "jquery-smooth-scroll",
   "filename": "jquery.smooth-scroll.min.js",
-  "version": "1.4.13",
+  "version": "1.7.2",
   "description": "Automatically make same-page links scroll smoothly",
   "repository": {
     "type": "git",
     "url": "https://github.com/kswedberg/jquery-smooth-scroll"
+  },
+  "keywords": [
+    "jQuery",
+    "jquery-plugin",
+    "scroll",
+    "animation"
+  ],
+  "npmName": "jquery-smooth-scroll",
+  "npmFileMap": [
+    {
+      "basePath": "",
+      "files": [
+        "jquery.smooth-scroll.min.js"
+      ]
+    }
+  ],
+  "license": "MIT",
+  "author": {
+    "name": "Karl Swedberg",
+    "email": "kswedberg@gmail.com",
+    "url": "http://www.learningjquery.com/"
   }
 }

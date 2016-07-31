@@ -2,7 +2,7 @@
   "name": "bluebird",
   "description": "Full featured Promises/A+ implementation with exceptionally good performance",
   "filename": "bluebird.min.js",
-  "version": "0.7.10-1",
+  "version": "3.4.1",
   "keywords": [
     "promise",
     "performance",
@@ -19,6 +19,15 @@
   "author": {
     "name": "Petka Antonov",
     "email": "petka_antonov@hotmail.com",
-    "url": "http://github.com/petkaantonov/"
-  }
+    "url": "https://github.com/petkaantonov/"
+  },
+  "npmName": "bluebird",
+  "npmFileMap": [
+    {
+      "basePath": "js/browser",
+      "files": [
+        "*"
+      ]
+    }
+  ]
 }

@@ -1,0 +1,30 @@
+{
+  "name": "userinfo",
+  "filename": "userinfo.min.js",
+  "description": "Javascript wrapper for the userinfo.io API",
+  "version": "1.1.1",
+  "homepage": "https://github.com/vdurmont/userinfo-js",
+  "keywords": [
+    "ip",
+    "geolocation",
+    "location"
+  ],
+  "author": {
+    "name": "Vincent DURMONT",
+    "email": "vdurmont@gmail.com",
+    "url": "http://vincent-durmont.com/"
+  },
+  "autoupdate": {
+    "source": "git",
+    "target": "git://github.com/vdurmont/userinfo-js.git",
+    "basePath": "dist",
+    "files": [
+      "userinfo.min.js"
+    ]
+  },
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/vdurmont/userinfo-js.git"
+  }
+}

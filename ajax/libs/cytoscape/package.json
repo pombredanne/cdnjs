@@ -1,0 +1,28 @@
+{
+  "name": "cytoscape",
+  "version": "2.7.6",
+  "filename": "cytoscape.min.js",
+  "description": "Graph theory (a.k.a. network) library for analysis and visualisation",
+  "homepage": "http://cytoscape.github.io/cytoscape.js",
+  "license": "LGPL",
+  "keywords": [
+    "graph",
+    "theory",
+    "visualisation",
+    "visualization",
+    "analysis"
+  ],
+  "author": "Max Franz <maxkfranz@gmail.com> (http://maxfranz.com/)",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/cytoscape/cytoscape.js.git"
+  },
+  "autoupdate": {
+    "source": "git",
+    "target": "git://github.com/cytoscape/cytoscape.js.git",
+    "basePath": "dist",
+    "files": [
+      "**/*cytoscape*"
+    ]
+  }
+}

@@ -1,20 +1,31 @@
 {
-    "name": "jquery.gridster",
-    "filename": "jquery.gridster.min.js",
-    "version": "0.2.1",
-    "description": "Gridster is a jQuery plugin that makes building intuitive draggable layouts from elements spanning multiple columns",
-    "url": "http://gridster.net/",
-    "license": "MIT",
-    "author": "Ducksboard",
-    "keywords": [
-        "grids",
-        "ui",
-        "templating",
-	   "jquery"
-    ],
-    "repository": {
-        "type": "git",
-        "url": "https://github.com/ducksboard/gridster.js.git"
-    },
-    "bugs": "https://github.com/ducksboard/gridster.js/issues"
+  "name": "jquery.gridster",
+  "title": "gridster.js",
+  "filename": "jquery.gridster.min.js",
+  "description": "a drag-and-drop multi-column jQuery grid plugin",
+  "version": "0.5.6",
+  "homepage": "http://gridster.net/",
+  "author": {
+    "name": "ducksboard",
+    "email": "hackers@ducksboard.com"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/ducksboard/gridster.js.git"
+  },
+  "keywords": [
+    "grids",
+    "ui",
+    "templating",
+    "jquery"
+  ],
+  "autoupdate": {
+    "source": "git",
+    "target": "git://github.com/ducksboard/gridster.js.git",
+    "basePath": "dist/",
+    "files": [
+      "**/*"
+    ]
+  },
+  "license": "MIT"
 }

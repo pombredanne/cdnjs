@@ -1,0 +1,21 @@
+{
+  "name": "angular-ui-select",
+  "filename": "select.min.js",
+  "author": "https://github.com/angular-ui/ui-select/graphs/contributors",
+  "homepage": "https://github.com/angular-ui/ui-select",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/angular-ui/ui-select.git"
+  },
+  "version": "0.18.1",
+  "license": "MIT",
+  "autoupdate": {
+    "source": "git",
+    "target": "git://github.com/angular-ui/ui-select.git",
+    "basePath": "dist",
+    "files": [
+      "*"
+    ]
+  },
+  "description": "AngularJS ui-select"
+}

@@ -1,23 +1,35 @@
 {
-    "name": "file-uploader",
-    "filename": "fineuploader.min.js",
-    "version": "3.7.0",
-    "description": "Multiple file upload plugin with progress-bar, drag-and-drop. ",
-    "homepage": "http://fineuploader.com",
-    "keywords": [
-       "uploader",
-       "multiple",
-       "drag-and-drop"
-   ],
-   "maintainers": [
-       {
-           "name": "valums"
-       }
-   ],
-   "repositories": [
-       {
-           "type": "git",
-           "url": "https://github.com/valums/file-uploader.git"
-       }
-   ]
+  "name": "file-uploader",
+  "filename": "fine-uploader.min.js",
+  "version": "5.10.1",
+  "description": "Multiple file upload plugin with progress-bar, drag-and-drop. ",
+  "homepage": "http://fineuploader.com",
+  "keywords": [
+    "uploader",
+    "multiple",
+    "drag-and-drop"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/FineUploader/fine-uploader.git"
+  },
+  "author": "Widen Enterprises, Inc.",
+  "license": "MIT",
+  "npmName": "fine-uploader",
+  "npmFileMap": [
+    {
+      "basePath": "fine-uploader",
+      "files": [
+        "fine-uploader*",
+        "**/*.+(gif|png)"
+      ]
+    },
+    {
+      "basePath": "",
+      "files": [
+        "*.fine-uploader/*fine-uploader*",
+        "*.fine-uploader/**/*.+(gif|png)"
+      ]
+    }
+  ]
 }

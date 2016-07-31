@@ -1,33 +1,33 @@
 {
-    "name": "jsoneditor",
-    "filename": "jsoneditor-min.js",
-    "version": "1.6.2",
-    "description": "JSON Editor Online is a web-based tool to view, edit, and format JSON. It shows your data side by side in a clear, editable treeview and in formatted plain text.",
-    "homepage": "http://jsoneditoronline.org",
-    "keywords": [
-        "json",
-        "html",
-        "editor"
-    ],
-    "licenses": [
-        {
-            "type": "Apache License 2.0",
-            "url": "http://www.apache.org/licenses/"
-        }
-    ],
-    "author": {
-        "name": "Jos de Jong",
-        "web": "http://github.com/wjosdejong"
-    },
-    "maintainers": [
-        {
-            "name": "Jos de Jong",
-            "web": "http://github.com/wjosdejong"
-        }
-    ],
-    "bugs": "http://github.com/wjosdejong/jsoneditoronline/issues",
-    "repository": {
-        "type": "git",
-        "url": "git://github.com/wjosdejong/jsoneditoronline.git"
+  "name": "jsoneditor",
+  "filename": "jsoneditor.min.js",
+  "version": "5.5.6",
+  "description": "A web-based tool to view, edit, format, and validate JSON",
+  "homepage": "http://jsoneditoronline.org",
+  "keywords": [
+    "json",
+    "html",
+    "editor",
+    "viewer",
+    "format",
+    "validate"
+  ],
+  "author": {
+    "name": "Jos de Jong",
+    "web": "http://josdejong.com"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/josdejong/jsoneditor.git"
+  },
+  "npmName": "jsoneditor",
+  "npmFileMap": [
+    {
+      "basePath": "dist",
+      "files": [
+        "**/*"
+      ]
     }
+  ],
+  "license": "Apache-2.0"
 }

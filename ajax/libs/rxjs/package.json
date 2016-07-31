@@ -1,9 +1,18 @@
 {
   "name": "rxjs",
+  "npmName": "@reactivex/rxjs",
+  "npmFileMap": [
+    {
+      "basePath": "/dist/global",
+      "files": [
+        "**/*"
+      ]
+    }
+  ],
   "filename": "rx.min.js",
   "title": "Reactive Extensions for JavaScript (RxJS)",
   "description": "Library for composing asynchronous and event-based operations in JavaScript",
-  "version": "2.2.10",
+  "version": "4.1.0",
   "homepage": "https://github.com/Reactive-Extensions/RxJS",
   "author": {
     "name": "Cloud Programmability Team",
@@ -13,16 +22,14 @@
     "type": "git",
     "url": "https://github.com/Reactive-Extensions/RxJS.git"
   },
-  "licenses": [
-    {
-      "type": "Apache License, Version 2.0",
-      "url": "http://www.apache.org/licenses/LICENSE-2.0.html"
-    }
-  ],
+  "dependencies": {},
   "keywords": [
     "LINQ",
     "FRP",
     "Reactive",
-    "Events"
-  ]
+    "Events",
+    "Rx",
+    "RxJS"
+  ],
+  "license": "Apache-2.0"
 }

@@ -1,25 +1,40 @@
 {
-    "name": "jplayer",
-    "filename": "jquery.jplayer.min.js",
-    "version": "2.5.4",
-    "description": "The jQuery HTML5 Audio / Video Library",
-    "homepage": "http://www.jplayer.org/",
-    "keywords": [
-       "framework",
-       "audio",
-       "video",
-	   "html5"
-   ],
-   "maintainers": [
-       {
-           "name": "Happyworm",
-           "web": "http://www.happyworm.com/"
-       }
-   ],
-   "repositories": [
-       {
-           "type": "git",
-           "url": "https://github.com/happyworm/jPlayer.git"
-       }
-   ]
+  "name": "jplayer",
+  "filename": "jplayer/jquery.jplayer.min.js",
+  "version": "2.9.2",
+  "description": "The jQuery HTML5 Audio / Video Library. Allows you to create a media player with a consistent interface and experience across all browsers.",
+  "homepage": "http://www.jplayer.org/",
+  "keywords": [
+    "framework",
+    "audio",
+    "video",
+    "html5"
+  ],
+  "dependencies": {
+    "jquery": ">1.7.0"
+  },
+  "npmName": "jplayer",
+  "npmFileMap": [
+    {
+      "basePath": "/dist/",
+      "files": [
+        "**/*.css",
+        "**/*.js",
+        "**/*.jpg",
+        "**/*.png",
+        "**/*.gif",
+        "**/*.swf"
+      ]
+    }
+  ],
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/happyworm/jPlayer.git"
+  },
+  "author": {
+    "name": "Mark J Panaghiston",
+    "email": "markp@happyworm.com",
+    "url": "http://happyworm.com/"
+  }
 }

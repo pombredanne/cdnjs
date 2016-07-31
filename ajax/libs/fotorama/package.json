@@ -1,0 +1,43 @@
+{
+  "name": "fotorama",
+  "version": "4.6.4",
+  "title": "Fotorama",
+  "description": "A simple, stunning, powerful jQuery gallery.",
+  "filename": "fotorama.min.js",
+  "keywords": [
+    "gallery",
+    "ui",
+    "responsive",
+    "slider",
+    "carousel",
+    "slideshow",
+    "photo",
+    "image",
+    "content",
+    "video"
+  ],
+  "author": {
+    "name": "Artem Polikarpov",
+    "url": "https://github.com/artpolikarpov/"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/artpolikarpov/"
+  },
+  "homepage": "http://fotorama.io/",
+  "docs": "http://fotorama.io/set-up/",
+  "download": "http://fotorama.s3.amazonaws.com/4.5.2/fotorama-4.5.2.zip",
+  "dependencies": {
+    "jquery": ">=1.8"
+  },
+  "npmName": "fotorama",
+  "npmFileMap": [
+    {
+      "basePath": "/",
+      "files": [
+        "fotorama*"
+      ]
+    }
+  ],
+  "license": "MIT"
+}

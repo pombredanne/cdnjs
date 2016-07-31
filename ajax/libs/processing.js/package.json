@@ -1,25 +1,25 @@
 {
-    "name": "processing.js",
-    "filename": "processing-api.min.js",
-    "version": "1.4.1",
-    "description": "A port of the Processing visualization language to JavaScript.",
-    "homepage": "http://processingjs.org",
-    "keywords": [
-       "html5",
-       "canvas"
-   ],
-   "maintainers": [
-       {
-           "name": "John Resig",
-           "twitter": "jeresig",
-           "web": "http://ejohn.org"
-       }
-   ],
-   "repositories": [
-       {
-           "type": "git",
-           "url": "https://github.com/jeresig/processing-js"
-       }
-   ]
-
+  "name": "processing.js",
+  "filename": "processing.min.js",
+  "version": "1.6.0",
+  "description": "A port of the Processing visualization language to JavaScript.",
+  "homepage": "http://processingjs.org",
+  "keywords": [
+    "html5",
+    "canvas"
+  ],
+  "autoupdate": {
+    "source": "git",
+    "target": "git://github.com/processing-js/processing-js.git",
+    "files": [
+      "processing.min.js",
+      "processing.js"
+    ]
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/processing-js/processing-js"
+  },
+  "license": "MIT",
+  "author": "Processing.js"
 }

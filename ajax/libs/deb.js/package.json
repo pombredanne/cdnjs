@@ -1,0 +1,31 @@
+{
+  "name": "deb.js",
+  "filename": "deb.min.js",
+  "version": "0.0.2",
+  "homepage": "https://github.com/krasimir/deb.js",
+  "description": "Minimalistic JavaScript library for debugging in the browser",
+  "author": {
+    "name": "Krasimir Tsonev",
+    "email": "info@krasimirtsonev.com",
+    "url": "http://krasimirtsonev.com"
+  },
+  "license": "MIT",
+  "dependencies": {},
+  "keywords": [
+    "javascript",
+    "browser",
+    "debugger"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/krasimir/deb.js"
+  },
+  "autoupdate": {
+    "source": "git",
+    "target": "git://github.com/krasimir/deb.js.git",
+    "basePath": "build",
+    "files": [
+      "deb.min.js"
+    ]
+  }
+}

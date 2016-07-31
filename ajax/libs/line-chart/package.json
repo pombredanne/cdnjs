@@ -1,0 +1,21 @@
+{
+  "name": "line-chart",
+  "version": "2.0.27",
+  "filename": "LineChart.min.js",
+  "homepage": "https://github.com/n3-charts/line-chart",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/n3-charts/line-chart.git"
+  },
+  "license": "MIT",
+  "npmName": "n3-charts",
+  "npmFileMap": [
+    {
+      "basePath": "build",
+      "files": [
+        "**/*"
+      ]
+    }
+  ],
+  "description": "Awesome charts for AngularJS."
+}

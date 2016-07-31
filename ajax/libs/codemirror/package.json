@@ -1,22 +1,32 @@
 {
-    "name": "codemirror",
-    "filename": "codemirror.min.js",
-    "version":"3.21.0",
-    "main": "codemirror.js",
-    "description": "In-browser code editing made bearable",
-    "licenses": [{"type": "MIT",
-                  "url": "http://codemirror.net/LICENSE"}],
-    "directories": {"lib": "./lib"},
-    "scripts": {"test": "node ./test/run.js"},
-    "devDependencies": {"node-static": "0.6.0"},
-    "bugs": "http://github.com/marijnh/CodeMirror/issues",
-    "keywords": ["JavaScript", "CodeMirror", "Editor"],
-    "homepage": "http://codemirror.net",
-    "maintainers":[{"name": "Marijn Haverbeke",
-                    "email": "marijnh@gmail.com",
-                    "web": "http://marijnhaverbeke.nl"}],
-    "repositories": [{"type": "git",
-                      "url": "http://marijnhaverbeke.nl/git/codemirror"},
-                     {"type": "git",
-                      "url": "https://github.com/marijnh/CodeMirror.git"}]
+  "name": "codemirror",
+  "filename": "codemirror.min.js",
+  "version": "5.17.0",
+  "description": "In-browser code editing made bearable",
+  "keywords": [
+    "JavaScript",
+    "CodeMirror",
+    "Editor"
+  ],
+  "homepage": "http://codemirror.net",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/codemirror/CodeMirror.git"
+  },
+  "npmName": "codemirror",
+  "npmFileMap": [
+    {
+      "basePath": "/lib/",
+      "files": [
+        "*.+(js|css)"
+      ]
+    },
+    {
+      "basePath": "/",
+      "files": [
+        "+(addon|theme|mode|keymap)/**/*.+(js|css)"
+      ]
+    }
+  ],
+  "license": "MIT"
 }

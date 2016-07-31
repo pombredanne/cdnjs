@@ -1,14 +1,27 @@
 {
-    "name": "react",
-    "filename": "react.min.js",
-    "version": "0.8.0",
-    "description": "React is a JavaScript library for building user interfaces.",
-    "keywords": [
-      "react",
-      "jsx",
-      "transformer",
-      "view"
-    ],
-    "homepage": "http://facebook.github.io/react",
-    "bugs": "https://github.com/facebook/react/issues"
+  "name": "react",
+  "filename": "react.min.js",
+  "version": "15.2.1",
+  "description": "React is a JavaScript library for building user interfaces.",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/facebook/react"
+  },
+  "keywords": [
+    "react",
+    "jsx",
+    "transformer",
+    "view"
+  ],
+  "homepage": "http://facebook.github.io/react",
+  "autoupdate": {
+    "source": "git",
+    "target": "git://github.com/reactjs/react-bower.git",
+    "basePath": "",
+    "files": [
+      "*.js"
+    ]
+  },
+  "namespace": "React",
+  "license": "BSD-3-Clause"
 }

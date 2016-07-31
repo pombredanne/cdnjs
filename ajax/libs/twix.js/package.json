@@ -1,19 +1,27 @@
 {
   "name": "twix.js",
   "filename": "twix.min.js",
-  "version": "0.3.0",
+  "version": "1.1.0",
   "description": "Twix.js allows you to work with date ranges",
   "homepage": "http://icambron.github.io/twix.js/",
   "author": "Isaac Cambron",
-  "keywords": ["twix", "date", "date range"],
+  "keywords": [
+    "twix",
+    "date",
+    "date range"
+  ],
   "repository": {
     "type": "git",
     "url": "https://github.com/icambron/twix.js.git"
   },
-  "bugs": "https://github.com/icambron/twix.js/issues",
-  "licenses": [
+  "npmName": "twix",
+  "npmFileMap": [
     {
-      "type": "MIT"
+      "basePath": "dist",
+      "files": [
+        "**/*"
+      ]
     }
-  ]
+  ],
+  "license": "MIT"
 }

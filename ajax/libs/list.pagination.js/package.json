@@ -1,7 +1,7 @@
 {
   "name": "list.pagination.js",
   "filename": "list.pagination.min.js",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "A pagination plugin for List.js",
   "homepage": "http://listjs.com/docs/plugins/fuzzysearch",
   "keywords": [
@@ -12,15 +12,18 @@
     "html",
     "ui"
   ],
-  "repositories": {
+  "license": "MIT",
+  "autoupdate": {
+    "source": "git",
+    "target": "git://github.com/javve/list.pagination.js.git",
+    "basePath": "dist/",
+    "files": [
+      "*"
+    ]
+  },
+  "repository": {
     "type": "git",
     "url": "git://github.com/javve/list.pagination.js.git"
   },
-  "license": "MIT",
-    "maintainers": [
-      {
-        "name": "Jonny Strömberg",
-        "website": "http://jonnystromberg.com"
-      }
-    ]
+  "author": "Jonny Strömberg <jonny.stromberg@gmail.com>"
 }

@@ -1,0 +1,20 @@
+{
+  "name": "jquery.gray",
+  "filename": "js/jquery.gray.min.js",
+  "version": "1.4.4",
+  "description": "Make an image gray in all browsers",
+  "homepage": "https://github.com/karlhorky/gray",
+  "license": "MIT",
+  "author": "kununu",
+  "keywords": [
+    "gray",
+    "grey",
+    "grayscale",
+    "images",
+    "image"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/karlhorky/gray.git"
+  }
+}

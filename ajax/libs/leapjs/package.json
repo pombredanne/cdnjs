@@ -1,20 +1,25 @@
 {
   "name": "leapjs",
   "filename": "leap.min.js",
-  "version": "0.1.2",
-  "description": "A JavaScript client for the LeapMotion.",
-  "homepage": "http://github.com/leapmotion/leapjs",
+  "version": "0.6.1",
+  "description": "JavaScript client for the Leap Motion Controller",
+  "homepage": "https://github.com/leapmotion/leapjs",
   "keywords": [
-  "graphics",
-  "leap"
+    "graphics",
+    "leap"
   ],
-  "maintainers": [
-    { "name": "joshbuddy", "email": "josh@leapmotion.com" }
-  ],
-  "repositories": [
+  "npmName": "leapjs",
+  "npmFileMap": [
     {
-      "type": "git",
-      "url": "https://github.com/leapmotion/leapjs.git"
+      "basePath": "/",
+      "files": [
+        "leap.min.js"
+      ]
     }
-  ]
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/leapmotion/leapjs.git"
+  },
+  "license": "Apache-2.0"
 }

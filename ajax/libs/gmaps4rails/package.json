@@ -1,26 +1,25 @@
 {
   "name": "gmaps4rails",
-  "filename": "gmaps4rails.googlemaps.js",
-  "description": "Enables easy display of items (taken from a Rails 3 model) with Google Map, OpenLayers, Bing or Mapquest. Geocoding + Directions included. ",
-  "version": "1.5.2",
-  "homepage": "https://rubygems.org/gems/gmaps4rails",
+  "filename": "gmaps4rails.min.js",
+  "description": "Enables easy Google map + overlays creation",
+  "version": "2.1.2",
+  "homepage": "http://apneadiving.github.io/",
   "keywords": [
-    "rails",
-    "maps"
-  ],
-  "maintainers": [
-    {
-      "name": "Benjamin Roth"
-    }
+    "google",
+    "maps",
+    "overlays"
   ],
   "repository": {
     "type": "git",
     "url": "git://github.com/apneadiving/Google-Maps-for-Rails.git"
   },
-  "licenses": [
-    {
-      "type": "MIT",
-      "url": "https://github.com/apneadiving/Google-Maps-for-Rails/blob/master/MIT-LICENSE"
-    }
-  ]
+  "autoupdate": {
+    "source": "git",
+    "target": "git://github.com/apneadiving/Google-Maps-for-Rails.git",
+    "basePath": "js_compilation",
+    "files": [
+      "**/*"
+    ]
+  },
+  "license": "MIT"
 }

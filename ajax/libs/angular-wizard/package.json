@@ -1,0 +1,32 @@
+{
+  "name": "angular-wizard",
+  "npmName": "angular-wizard",
+  "npmFileMap": [
+    {
+      "basePath": "/dist/",
+      "files": [
+        "*.css",
+        "*.js"
+      ]
+    }
+  ],
+  "description": "Easy to use Wizard library for AngularJS",
+  "version": "0.6.1",
+  "filename": "angular-wizard.min.js",
+  "homepage": "https://github.com/mgonto/angular-wizard",
+  "author": "Martin Gontovnikas <martin@gon.to>",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/mgonto/angular-wizard.git"
+  },
+  "keywords": [
+    "angular",
+    "client",
+    "browser",
+    "wizard",
+    "form",
+    "steps"
+  ],
+  "dependencies": {},
+  "license": "MIT"
+}

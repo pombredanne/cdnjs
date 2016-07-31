@@ -1,0 +1,15 @@
+{
+  "name": "FileSaver.js",
+  "filename": "FileSaver.min.js",
+  "version": "2014-11-29",
+  "description": "An HTML5 saveAs() FileSaver implementation.",
+  "homepage": "https://github.com/eligrey/FileSaver.js/",
+  "keywords": [
+    "filesaver"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/eligrey/FileSaver.js"
+  },
+  "license": "MIT"
+}

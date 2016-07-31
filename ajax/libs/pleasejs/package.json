@@ -1,0 +1,26 @@
+{
+  "name": "pleasejs",
+  "filename": "Please.min.js",
+  "version": "0.4.2",
+  "description": "JS library to generate random pleasing colors/color schemes",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Fooidge/PleaseJS.git"
+  },
+  "keywords": [
+    "color",
+    "scheme",
+    "random"
+  ],
+  "author": "Jordan Checkman",
+  "license": "MIT",
+  "homepage": "https://github.com/Fooidge/PleaseJS",
+  "autoupdate": {
+    "source": "git",
+    "target": "git://github.com/Fooidge/PleaseJS.git",
+    "basePath": "dist",
+    "files": [
+      "**/*"
+    ]
+  }
+}
